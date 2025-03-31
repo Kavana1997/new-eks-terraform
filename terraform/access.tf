@@ -51,7 +51,7 @@ resource "aws_iam_policy" "eks_assume_role_policy" {
       {
         Effect   = "Allow"
         Action   = "sts:AssumeRole"
-        Resource = "arn:aws:iam::936379345511:role/${aws_iam_role.admin_role.name}"
+        Resource = "arn:aws:iam::651706752271:role/${aws_iam_role.admin_role.name}"
       }
     ]
   })
