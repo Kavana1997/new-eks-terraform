@@ -247,7 +247,20 @@ resource "aws_iam_policy" "alb_controller_policy" {
                 "elasticloadbalancing:ModifyRule"
             ],
             "Resource": "*"
+        },
+        { 
+            "Effect": "Allow",
+            "Action": [
+                "s3:ListBucket",
+                "s3:GetObject",
+                "s3:PutObject",
+                "s3:DeleteObject"
+            ],
+            "Resource": [
+                "arn:aws:s3:::devops4solutions-terraform",
+                "arn:aws:s3:::devops4solutions-terraform/*"
+            ]
         }
     ]
-})
+  })
 }
