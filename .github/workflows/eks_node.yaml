@@ -27,7 +27,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: terraform/eks_nodegroup
+        working-directory: terraform
     steps:
     - name: Checkout repository
       uses: actions/checkout@v2
