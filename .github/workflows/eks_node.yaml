@@ -4,12 +4,12 @@ on:
     #branches:
     #  - main
    # paths:
-     # - 'terraform/eks_nodegroup/**'
+     # - 'terraform/**'
   pull_request:
     branches:
       - main
     paths:
-      - 'terraform/eks_nodegroup/**'
+      - 'terraform/**'
   workflow_dispatch:
     inputs:
       action:
